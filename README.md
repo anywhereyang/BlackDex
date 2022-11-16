@@ -6,11 +6,27 @@
 
 BlackDex是一个运行在Android手机上的脱壳工具，支持5.0～12，无需依赖任何环境任何手机都可以使用，包括模拟器。只需几秒，即可对已安装包括未安装的APK进行脱壳。
 
+## 运行原理
+[博客地址](https://blog.niunaijun.top/index.php/tag/BlackDex/)
+
 ## 项目声明
 ### 本项目并不针对任何加固，在遇到检测环境等均不处理，仅供安全领域分析用途。项目免费开源仅供学习用途、请勿用于非法用途。否则后果自负！
+### Black系列交流群：390562046（QQ）
+
+## 编译说明
+运行前请请Make Project一次
+
+运行前请请Make Project一次
+
+运行前请请Make Project一次
 
 ## 脱壳说明
 本项目针对一（落地加载）、二（内存加载）、三（指令抽取）代壳，摆脱对以往脱壳环境的困扰，几乎支持5.0以上的任何系统。并且拥有 **快速**、**方便**、**成功率高** 的优点。一般只需要几秒钟即可完成对已安装包括未安装应用脱壳。**未安装应用**脱壳时间主要花费在复制文件IO消耗上，由应用大小决定速度。已安装应用一般在数秒内即可完成脱壳。
+
+### 脱壳文件说明
+- hook_xxxx.dex **hook系统api脱壳的dex，深度脱壳不修复**
+- cookie_xxxx.dex **利用dexFile cookie脱壳的dex，深度脱壳时会修复此dex**
+
 
 ## 脱壳原理
 通过DexFile cookie进行脱壳，理论兼容art开始的所有版本。可能少数因设备而异，绝大部分是支持的。资源有限无法大量测试，遇到问题请提issues.
@@ -49,6 +65,7 @@ BlackDex下载：https://github.com/CodingGay/BlackDex/releases
 - [Dreamland](https://github.com/canyie/Dreamland)
 - [lkchandexfile](https://github.com/lkchan724/lkchandexfile)
 - [xhook](https://github.com/iqiyi/xHook)
+- [Dobby](https://github.com/jmpews/Dobby)
 ### License
 
 > ```
